@@ -8,7 +8,6 @@ export default async function page() {
   const { getRecentNews } = useNews();
 
   const recentNews: TNewsFeed[] = await getRecentNews();
-  console.log(recentNews, "news");
   return (
     <>
       <h2 className="text-xl mb-10 uppercase font-bold text-pink-200 tracking-widest">
